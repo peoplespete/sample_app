@@ -199,7 +199,7 @@ describe User do
       its(:followers) { should include(@user) }
     end
 
-    describe "and unfollowing " do
+    describe "and unfollowing" do
       before { @user.unfollow!(other_user) }
 
       it { should_not be_following(other_user) }
